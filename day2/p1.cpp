@@ -45,8 +45,8 @@ void Time ::showTime()
 int main()
 {
     Time t1, t2;
-    t1.setTime(22,56,55);
-    t2.setTime(10,15,17);
+    t1.setTime(22, 56, 55);
+    t2.setTime(10, 15, 17);
     t1.showTime();
     t2.showTime();
     t1.addTime(t2);
