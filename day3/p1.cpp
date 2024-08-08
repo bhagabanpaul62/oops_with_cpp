@@ -88,17 +88,14 @@ int main()
     q.enq(30);
     q.enq(40);
     q.enq(50);
-
     q.display();
     q.deq();
     q.deq();
     q.deq();
     q.deq();
     q.deq();
-
     q.display();
     q.deq();
-
     q.display();
     Queue v(5);
     v.enq(10);
@@ -106,14 +103,12 @@ int main()
     v.enq(30);
     v.enq(40);
     v.enq(50);
-
     v.display();
     v.deq();
     v.deq();
     v.deq();
     v.deq();
     v.deq();
-
     v.display();
     v.deq();
     v.display();

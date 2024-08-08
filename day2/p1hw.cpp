@@ -19,8 +19,8 @@ void order(int &a, int &b)
 int main()
 {
     int a, b, c;
-    a = 7;
-    b = 10;
+    a = 10;
+    b = 9;
     cout << "before swap" << endl;
     cout << "a is :: " << a << " b is :: " << b << endl;
     order(a, b);
