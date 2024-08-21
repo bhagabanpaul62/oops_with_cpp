@@ -15,19 +15,46 @@ public:
     {
         arr[0] = '\0';
     }
-    string1(char arr)
-    {
 
-        cin >> arr;
+    string1(const char *a)
+    {
+        strcpy(arr, a);
     }
+
     void display()
     {
         cout << arr;
+    }
+
+    string1 operator+(string1 &s)
+    {
+        string1 temp;
+        strcpy(temp.arr, arr);
+        strcat(temp.arr, s.arr);
+        return temp;
+    }
+
+    bool operator==(string1 &s)
+    {
+        return strcmp(arr, s.arr) == 0;
     }
 };
 
 int main()
 {
     string1 s("apple");
-    s.display();
+    string1 s1("nice");
+    string1 s3;
+    s3 = s1 + s;
+
+    s3.display();
+
+    if (s1 == s)
+    {
+        cout << "\nmatch";
+    }
+    else
+    {
+        cout << "\nnot same";
+    }
 }
