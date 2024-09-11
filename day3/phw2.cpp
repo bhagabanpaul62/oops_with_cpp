@@ -52,9 +52,10 @@ void Employee::display()
 int main()
 {
     Employee e(1223, 50);
-    Boss b(1233, 100);
+    Boss b(1232, 100);
     b.display();
     e.display();
     b.incsalary(e);
     e.display();
+
 }
